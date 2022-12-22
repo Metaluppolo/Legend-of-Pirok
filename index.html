@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="game, dungeon, f2p">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcun icon" type="image/x-icon" href="./css/img/dungeon/merchant/anim_f1.png">  
+
+    <link rel="stylesheet" type="text/css" href="./css/game.css">
+
+    <script src="./js/util.js"></script>
+    <script src="./js/gameStateFlag.js"></script>
+    <script src="./js/gameManager.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/shop.js"></script>
+    <script src="./js/playground.js"></script>
+    <script src="./js/dungeon.js"></script>
+    <script src="./js/room.js"></script>
+    <script src="./js/weapon.js"></script>
+    <script src="./js/hero.js"></script>
+    <script src="./js/player.js"></script>
+    <script src="./js/enemy.js"></script>
+    <script src="./js/prop.js"></script>
+    <script src="./js/statusBar.js"></script>
+    <script src="./js/sketcher.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/ajax_jquery.js"></script>
+
+    <title>Legend of Pirøk</title>
+    <!--                                                    VALIDAZIONE DEI FILES CSS
+
+      A differenza di quello presente su http://validator.w3.org/, il validatore CSS disponibile su https://jigsaw.w3.org/css-validator/ 
+      solleva dei warning riguardo le proprietà custom, ovvero le variabili CSS, usate ampliamente in questo progetto poichè hanno permesso di dare un nome
+      alle variabili numeriche utilizzate più frequentemente, evitando eventuali errori di battitura ed introducendo maggiore leggibilità del codice.
+      Hanno reso inoltre di semplice implementazione la scalabilità della pagina HTML e la proporzionalità tra i vari elementi presenti su schermo.
+      Medesimo problema si riscontra per proprietà specifiche dei browser (-moz-user-select, -moz-crisp-edges, etc.) introdotte per garantire maggiore compatibilità.
+    -->
+    <!--                                          VALIDAZIONE DEL CODICE HTML GENERATO DINAMICAMENTE
+
+      Il codice HTML generato dinamicamente, estratto tramite il bookmarklet fornito sulle versioni portable dei due browser Mozilla FireFox e Google Chrome,
+      se validato presenta numerosi errori.
+      Dopo svariati controlli e tentativi di debug ho notato che, seppure il codice JavaScript sia stato scritto rispettando la sintassi corretta, 
+      il codice HTML estratto presenta degli errori esclusivamente laddove viene utilizzata la proprietà  backgroundImage = "url('URL')" 
+      poichè, come si può notare, il bookmarklet sembrerebbe non fare distinzioni tra singolo apice e doppio apice.
+      Come riprova, apportando manualmente le dovute modifiche agli apici del codice HTML estratto si verifica l'eliminazione di ogni errore fornito in precedenza dal validatore.
+    -->
+  </head>
+
+  <body onload="begin()">
+    <div id="wrapper" class="pixelated"></div>
+    <div id="imgPreloader" class="hidden"></div>
+  </body>
+  
+</html>

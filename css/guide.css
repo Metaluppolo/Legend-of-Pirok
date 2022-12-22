@@ -1,0 +1,52 @@
+h1 {
+    font-size: calc( 0.09 * var(--playground-height) );
+    padding: 1%;
+}
+
+h2 {
+    margin: 0;
+    padding-left: 5%;
+    margin-bottom: 1%;
+}
+
+body {
+    color: white;
+    font-size: calc( 0.032 * var(--playground-height) );
+}
+
+p {
+    padding: 5%;
+    padding-top: 0;
+    padding-bottom: 3%;
+}
+
+#guide_centralColumn {
+    background-color: rgb(24, 23, 23);
+    width: var(--playground-width);
+}
+
+#guide_title {
+    text-align: center;
+    margin: 0%;
+}
+
+.guide_links_wrapper {
+    text-align: center;
+    padding: 2%;
+}
+#guide_header {
+    padding-bottom: 0;
+}
+#guide_footer {
+    padding-top: 0;
+}
+
+.guide_link {
+    font-weight: bold;
+    color: silver;
+    text-decoration: none;
+}
+.guide_link:hover {
+    color: white; 
+    text-decoration: underline;
+}
